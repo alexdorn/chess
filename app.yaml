@@ -1,6 +1,5 @@
 # https://cloud.google.com/appengine/docs/flexible/nodejs/configuring-your-app-with-app-yaml
 runtime: nodejs
-api_version: "1.0"
 env: flexible
 threadsafe: true
 env_variables:
@@ -25,4 +24,6 @@ readiness_check:
   failure_threshold: 2
   success_threshold: 2
   app_start_timeout_sec: 300
+skip_files:
+- yarn.lock
 service_account: eitcbmdemotest-63867@appspot.gserviceaccount.com

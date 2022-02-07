@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": "16.x"
+  },
   "name": "chessbattle",
   "workspaces": [
     "client",
@@ -9,7 +12,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "start": "cd ./server && npm start",
+    "start": "node --version && cd ./server && npm start",
     "gcp-build": "cd ./client && npm run build:prod"
   },
   "dependencies": {
