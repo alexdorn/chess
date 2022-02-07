@@ -9,8 +9,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "start": "cd ./server && yarn start",
-    "heroku-postbuild": "cd client && yarn build:prod",
+    "start": "cd ./server && npm start",
     "gcp-build": "cd ./client && npm run build:prod"
   },
   "dependencies": {
